@@ -28,11 +28,6 @@
       </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav pull-left">
-           <!--  <li>
-            <%= link_to root_path do  %>
-              <span class="glyphicon glyphicon-home">&nbsp;Home</span> 
-            <% end %>
-            </li> -->
             <% if current_user %> 
              <li> <%= link_to "Profile", user_path(current_user), class: "profile" %></li>
             <% end %>
