@@ -45,5 +45,14 @@ group :development, :test do
   #rspec for testing
   gem 'rspec-rails'
 
+group :development, :test do
+	gem 'sqlite3'
+end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+
 end
 
